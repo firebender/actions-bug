@@ -1,0 +1,35 @@
+{
+    "name": "firebender/actions-bug",    
+    "autoload": {
+        "psr-4": {
+            "Bugsy\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bugsy\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bugsy\\PackageServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "orchestra/testbench": "^7.4"
+    },
+    "require": {
+        "lorisleiva/laravel-actions": "^2.4"
+    }
+}
